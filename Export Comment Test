@@ -1,0 +1,20 @@
+<xs:element name="Activity">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Type" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Code" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="BeginDate" type="xs:dateTime" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="EndDate" type="xs:dateTime" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Duration" type="xs:double" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="ParentID" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Zone" type="ZoneType" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Phases" type="PhasesType" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Costs" type="CostsType" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Resources" type="ResourcesType" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Comment" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
